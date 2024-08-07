@@ -1,0 +1,17 @@
+# Ignorar archivos y directorios específicos
+sensibles.txt
+secreto/
+
+# Ignorar todos los archivos con una extensión específica
+*.key
+*.pem
+
+# Ignorar todos los archivos en un directorio específico
+config/
+
+# Ignorar todos los archivos en un directorio y sus subdirectorios
+logs/**
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db

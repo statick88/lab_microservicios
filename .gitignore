@@ -1,0 +1,26 @@
+# Django
+*.pyc
+__pycache__/
+*.sqlite3
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.log
+*.bak
+*.tmp
+*.db
+*.db-journal
+media/
+
+# FastAPI
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.log
+*.bak
+*.tmp
+*.db
+*.db-journal
