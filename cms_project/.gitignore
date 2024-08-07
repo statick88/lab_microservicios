@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+
+# Ignore the virtual environment directory
+cms_env/
+
+# Ignore media and static files
+media/
+staticfiles/
+
+# Ignore the SQLite database file
+*.sqlite3
+
+# Ignore Django migrations
+**/migrations/**
+
+# Ignore sensitive settings
+cms_project/cms_project/settings.py
+
+# Ignore Docker container logs and temporary files
+*.log
+**/Dockerfile~
+**/docker-compose.yml~
+
+# IDE specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

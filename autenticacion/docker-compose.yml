@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:9.0.1
+    container_name: AutenticacionDB
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: AutenticacionDB
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+
+  fastapi:
+    build: .
+    container_name: MicroservicioAutenticacion
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    depends_on:
+      - db
+
+networks:
+  app-network:
+    driver: bridge
